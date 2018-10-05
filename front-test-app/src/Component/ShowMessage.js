@@ -12,7 +12,7 @@ class ShowMessage extends Component {
                 messages: res.data
             })
             
-        })
+         })
     }
     render() {
     
@@ -25,7 +25,7 @@ class ShowMessage extends Component {
                     <div className="card-content">
                        <span className="card-title ">{message.name}</span>
                        <p>{message.email}</p>
-                        <p>{message.content}</p>
+                       <p>{message.content}</p>
                     </div>
                 </div>
             )
@@ -34,8 +34,8 @@ class ShowMessage extends Component {
         <div className="container">
          {messagesList}
         </div>
-    )
-}
+        )
+    }
 }
 
 export default ShowMessage;

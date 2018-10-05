@@ -5,14 +5,14 @@ const NavBar = (props) => {
     return(
        
         <nav>
-        <div className="nav-wrapper">
-          <Link to="/" className="brand-logo center">Contact form</Link>
-          <ul className="right" >
+            <div className="nav-wrapper">
+                <Link to="/" className="brand-logo center">Contact form</Link>
+                <ul className="right" >
                     <li><Link to="/showmessages">Messages</Link></li>
                     
                   
                 </ul>
-        </div>
+            </div>
       </nav>
       
     )

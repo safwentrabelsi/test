@@ -7,36 +7,26 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom'
 
 
 class App extends Component {
-  state = {
-    name:'',
-    email:'',
-    content:''
-    
-  }
  
-
-  
-
-  
   render() {
     return (
       <div className="App ">
       <BrowserRouter>
 
           <div>
-          <NavBar/>
-          <Switch>
+            <NavBar/>
+            <Switch>
           
-          <Route  path="/showmessages" component={ShowMessage}/>
-          <Route exact path='/' addMessage={this.addMessage} component={AddMessage}/>
-          </Switch>
+              <Route  path="/showmessages" component={ShowMessage}/>
+              <Route exact path='/' component={AddMessage}/>
+            </Switch>
           </div>
           
       </BrowserRouter>
           
       
           
-      </div>
+    </div>
     );
   }
 }
