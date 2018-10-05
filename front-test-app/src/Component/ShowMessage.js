@@ -6,7 +6,7 @@ class ShowMessage extends Component {
         messages: [ ]
     }
     componentDidMount() {
-        axios.get('/getmessage').then(res=>{
+        axios.get('http://localhost:3001/getmessage').then(res=>{
             
             this.setState({
                 messages: res.data
