@@ -6,7 +6,7 @@ class ShowMessage extends Component {
         messages: [ ]
     }
     componentDidMount() {
-        axios.get('https://git.heroku.com/safwen-trabelsi-test-app.git/getmessage').then(res=>{
+        axios.get('/getmessage').then(res=>{
             
             this.setState({
                 messages: res.data

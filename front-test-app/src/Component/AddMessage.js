@@ -22,7 +22,7 @@ class AddMessage extends Component {
             axios.defaults.headers = {
               'Content-Type': 'application/json'
           }
-            axios.post('https://git.heroku.com/safwen-trabelsi-test-app.git/addmessage',this.state).then(data=>{
+            axios.post('/addmessage',this.state).then(data=>{
           console.log(data)  
         })
 
