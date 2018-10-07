@@ -22,7 +22,7 @@ class AddMessage extends Component {
             axios.defaults.headers = {
               'Content-Type': 'application/json'
           }
-            axios.post('http://localhost:3001/addmessage',this.state).then(data=>{
+            axios.post('/addmessage',this.state).then(data=>{
           console.log(data)  
         })
 
